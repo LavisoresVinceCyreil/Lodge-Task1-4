@@ -15,7 +15,6 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import javax.swing.JOptionPane;
 import javax.swing.table.TableModel;
-import static jdk.nashorn.internal.runtime.Debug.id;
 import net.proteanit.sql.DbUtils;
 
 /**
@@ -128,7 +127,7 @@ public class UsersForm extends javax.swing.JFrame {
 
         jPanel9.add(jPanel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 670, 60));
 
-        jPanel11.setBackground(new java.awt.Color(255, 51, 51));
+        jPanel11.setBackground(new java.awt.Color(153, 0, 51));
         jPanel11.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jPanel11.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -141,7 +140,7 @@ public class UsersForm extends javax.swing.JFrame {
         jPanel11.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 280, 150, 50));
 
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/1.png"))); // NOI18N
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/gwapo-removebg-preview.png"))); // NOI18N
         jPanel11.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 150, 110));
 
         adds.setBackground(new java.awt.Color(153, 153, 255));
@@ -206,9 +205,9 @@ public class UsersForm extends javax.swing.JFrame {
         id.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jPanel11.add(id, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 120, 150, 30));
 
+        jLabel1.setBackground(new java.awt.Color(153, 0, 51));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/hotel-logo-design_423075-16 (1).jpg"))); // NOI18N
-        jPanel11.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 150, 330));
+        jPanel11.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 150, 110));
 
         jPanel9.add(jPanel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 60, 150, 330));
 
@@ -241,26 +240,6 @@ public class UsersForm extends javax.swing.JFrame {
           
         
     }//GEN-LAST:event_formWindowActivated
-
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
-        Admins ads= new Admins();
-        ads.setVisible(true);
-        this.dispose();
-    }//GEN-LAST:event_jButton1ActionPerformed
-
-    private void jLabel29MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel29MouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jLabel29MouseClicked
-
-    private void jLabel28MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel28MouseClicked
-        // TODO add your handling code here:
-        this.dispose();
-    }//GEN-LAST:event_jLabel28MouseClicked
-
-    private void U_id2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_U_id2MouseClicked
-
-    }//GEN-LAST:event_U_id2MouseClicked
 
     private void idMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_idMouseClicked
         // TODO add your handling code here:
@@ -335,6 +314,26 @@ public class UsersForm extends javax.swing.JFrame {
        
          edit.setBackground(hc);
     }//GEN-LAST:event_u_editMouseExited
+
+    private void jLabel28MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel28MouseClicked
+        // TODO add your handling code here:
+        this.dispose();
+    }//GEN-LAST:event_jLabel28MouseClicked
+
+    private void jLabel29MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel29MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabel29MouseClicked
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+        Admins ads= new Admins();
+        ads.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void U_id2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_U_id2MouseClicked
+
+    }//GEN-LAST:event_U_id2MouseClicked
 
     private void addsMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_addsMouseClicked
 

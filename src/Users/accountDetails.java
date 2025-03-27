@@ -107,7 +107,7 @@ public class accountDetails extends javax.swing.JFrame {
         header14.add(Acc_lname1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 80, 140, 30));
 
         jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/gwwapo-removebg-preview.png"))); // NOI18N
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/gwapo__1_-removebg-preview.png"))); // NOI18N
         jLabel6.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         header14.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 130, 80));
 

@@ -223,6 +223,8 @@ public class Registration extends javax.swing.JFrame {
         jPanel6.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jPanel6.setForeground(new java.awt.Color(255, 255, 255));
         jPanel6.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/hotel-logo-design_423075-16 (1).jpg"))); // NOI18N
         jPanel6.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(-60, 40, 200, 370));
 
         jPanel9.add(jPanel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, 0, 130, 380));
@@ -278,7 +280,7 @@ public class Registration extends javax.swing.JFrame {
         }else if(!(pname.getText().equals(pconfirm.getText()))){
             JOptionPane.showMessageDialog(null, "Password does not much!");
         }else if(duplicateChecker()){
-            System.out.println("Nag Doble imong Gmail Aysig binugok!");
+            System.out.println("email alreaady exist!");
         }else{
 
             config conf = new config();
@@ -289,7 +291,7 @@ public class Registration extends javax.swing.JFrame {
                     + "VALUES ('"+fname.getText()+"', '"+lname.getText()+"', '"+gender.getSelectedItem()+"'"
                     + ", '"+utype.getSelectedItem()+"', '"+email.getText()+"', '"+uname.getText()+"'"
                     + ", '"+pass+"', '"+contact.getText()+"', 'Pending')")==1){
-                JOptionPane.showMessageDialog(null, "you are now Successfully Registeres pwede naka mo log out!");
+                JOptionPane.showMessageDialog(null, "you are now Successfully Registered!");
                 Login login = new Login();
                 login.setVisible(true);
                 this.dispose();

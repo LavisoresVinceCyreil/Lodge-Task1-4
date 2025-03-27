@@ -40,10 +40,9 @@ public class ChangePass extends javax.swing.JFrame {
         idDisplay = new javax.swing.JLabel();
         jLabel16 = new javax.swing.JLabel();
         jLabel28 = new javax.swing.JLabel();
-        header7 = new javax.swing.JPanel();
         jPanel11 = new javax.swing.JPanel();
         jButton1 = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
         header14 = new javax.swing.JPanel();
         Acc_lname1 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
@@ -92,10 +91,6 @@ public class ChangePass extends javax.swing.JFrame {
 
         jPanel9.add(jPanel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 60));
 
-        header7.setBackground(new java.awt.Color(255, 255, 255));
-        header7.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-        jPanel9.add(header7, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 60, -1, 280));
-
         jPanel11.setBackground(new java.awt.Color(255, 255, 255));
         jPanel11.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jPanel11.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -108,8 +103,8 @@ public class ChangePass extends javax.swing.JFrame {
         });
         jPanel11.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 270, 150, 40));
 
-        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jPanel11.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 150, 290));
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/gwapo__1_-removebg-preview.png"))); // NOI18N
+        jPanel11.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, 130, 100));
 
         header14.setBackground(new java.awt.Color(0,0,0,60));
         header14.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -119,10 +114,9 @@ public class ChangePass extends javax.swing.JFrame {
         Acc_lname1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         Acc_lname1.setText("FirstName");
         Acc_lname1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        header14.add(Acc_lname1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 80, 140, 30));
+        header14.add(Acc_lname1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 90, 140, 30));
 
         jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/gwwapo-removebg-preview.png"))); // NOI18N
         jLabel6.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         header14.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 130, 80));
 
@@ -131,9 +125,9 @@ public class ChangePass extends javax.swing.JFrame {
         Acc_fname1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         Acc_fname1.setText("Lname");
         Acc_fname1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        header14.add(Acc_fname1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 100, 130, 30));
+        header14.add(Acc_fname1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 110, 130, 30));
 
-        jPanel11.add(header14, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, 130, 130));
+        jPanel11.add(header14, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, 130, 140));
 
         jPanel9.add(jPanel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 60, -1, 330));
 
@@ -298,11 +292,10 @@ public class ChangePass extends javax.swing.JFrame {
     private javax.swing.JLabel Acc_lname1;
     private javax.swing.JPasswordField conpass;
     private javax.swing.JPanel header14;
-    private javax.swing.JPanel header7;
     private javax.swing.JLabel idDisplay;
     private javax.swing.JButton jButton1;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel28;
     private javax.swing.JLabel jLabel34;
     private javax.swing.JLabel jLabel35;

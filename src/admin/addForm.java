@@ -321,8 +321,6 @@ public class addForm extends javax.swing.JFrame {
         });
         jPanel6.add(delete1);
         delete1.setBounds(40, 240, 80, 36);
-
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/hotel-logo-design_423075-16 (1).jpg"))); // NOI18N
         jPanel6.add(jLabel1);
         jLabel1.setBounds(-90, 70, 420, 370);
 
@@ -385,6 +383,65 @@ public class addForm extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_pnameActionPerformed
 
+    private void jLabel25MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel25MouseClicked
+        // TODO add your handling code here:
+        this.dispose();
+    }//GEN-LAST:event_jLabel25MouseClicked
+
+    private void deleteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deleteActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_deleteActionPerformed
+
+    private void refreshActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_refreshActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_refreshActionPerformed
+
+    private void cancelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_cancelMouseClicked
+        UsersForm usf=  new  UsersForm();
+        usf.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_cancelMouseClicked
+
+    private void cancelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cancelActionPerformed
+
+    }//GEN-LAST:event_cancelActionPerformed
+
+    private void clearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_clearActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_clearActionPerformed
+
+    private void updateMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_updateMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_updateMouseClicked
+
+    private void updateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_updateActionPerformed
+
+        if(fname.getText().isEmpty()
+            || lname.getText().isEmpty()
+            || email.getText().isEmpty()
+            || uname.getText().isEmpty()
+            || pname.getText().isEmpty()
+            || contact.getText().isEmpty()){
+            JOptionPane.showMessageDialog(null, "All Fields are Required!");
+        }else if(pname.getText().length()<8){
+            JOptionPane.showMessageDialog(null, "Password Must be longer than 8!");
+        }else if(!(pname.getText().equals(pconfirm.getText()))){
+            JOptionPane.showMessageDialog(null, "Password does not much!");
+        }else if(updateChecker()){
+            System.out.println("Duplicate Exist!");
+        }else{
+            config conf = new config();
+
+            conf.updateData("UPDATE users SET fname='"+fname.getText()+"',lname ='"+lname.getText()+"',email ='"+email.getText()+"',gender ='"+gender.getSelectedItem()+"',account_type ='"+utype.getSelectedItem()+"',uname='"+uname.getText()+"',"
+                + "status ='"+ustatus.getSelectedItem()+"' WHERE id = '"+id.getText()+"'  ");
+            JOptionPane.showMessageDialog(null, "Updated Successfully!");
+            UsersForm usf=  new  UsersForm();
+            usf.setVisible(true);
+            this.dispose();
+
+        }
+    }//GEN-LAST:event_updateActionPerformed
+
     private void addActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addActionPerformed
         // TODO add your handling code here:
         if(fname.getText().isEmpty()
@@ -410,14 +467,13 @@ public class addForm extends javax.swing.JFrame {
             UsersForm usf=  new  UsersForm();
             usf.setVisible(true);
             this.dispose();
-            }
+        }
         }
     }//GEN-LAST:event_addActionPerformed
 
-    private void jLabel25MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel25MouseClicked
+    private void delete1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_delete1ActionPerformed
         // TODO add your handling code here:
-        this.dispose();
-    }//GEN-LAST:event_jLabel25MouseClicked
+    }//GEN-LAST:event_delete1ActionPerformed
 
     private void pconfirm1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pconfirm1ActionPerformed
         // TODO add your handling code here:
@@ -426,66 +482,6 @@ public class addForm extends javax.swing.JFrame {
     private void ustatusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ustatusActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_ustatusActionPerformed
-
-    private void refreshActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_refreshActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_refreshActionPerformed
-
-    private void clearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_clearActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_clearActionPerformed
-
-    private void updateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_updateActionPerformed
-          
-         if(fname.getText().isEmpty()
-            || lname.getText().isEmpty()
-            || email.getText().isEmpty()
-            || uname.getText().isEmpty()
-            || pname.getText().isEmpty()
-            || contact.getText().isEmpty()){
-            JOptionPane.showMessageDialog(null, "All Fields are Required!");
-        }else if(pname.getText().length()<8){
-            JOptionPane.showMessageDialog(null, "Password Must be longer than 8!");
-        }else if(!(pname.getText().equals(pconfirm.getText()))){
-            JOptionPane.showMessageDialog(null, "Password does not much!");
-        }else if(updateChecker()){
-            System.out.println("Duplicate Exist!");
-        }else{
-        config conf = new config();
-           
-        conf.updateData("UPDATE users SET fname='"+fname.getText()+"',lname ='"+lname.getText()+"',email ='"+email.getText()+"',gender ='"+gender.getSelectedItem()+"',account_type ='"+utype.getSelectedItem()+"',uname='"+uname.getText()+"',"
-                + "status ='"+ustatus.getSelectedItem()+"' WHERE id = '"+id.getText()+"'  ");
-                 JOptionPane.showMessageDialog(null, "Updated Successfully!");
-            UsersForm usf=  new  UsersForm();
-            usf.setVisible(true);
-            this.dispose();
-        
-        }
-    }//GEN-LAST:event_updateActionPerformed
-
-    private void delete1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_delete1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_delete1ActionPerformed
-
-    private void deleteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deleteActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_deleteActionPerformed
-
-    private void cancelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cancelActionPerformed
-       
-          
-        
-    }//GEN-LAST:event_cancelActionPerformed
-
-    private void cancelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_cancelMouseClicked
-       UsersForm usf=  new  UsersForm();
-            usf.setVisible(true);
-            this.dispose();
-    }//GEN-LAST:event_cancelMouseClicked
-
-    private void updateMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_updateMouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_updateMouseClicked
 
     /**
      * @param args the command line arguments

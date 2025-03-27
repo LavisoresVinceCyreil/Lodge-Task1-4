@@ -45,6 +45,7 @@ public class Admins extends javax.swing.JFrame {
         header7 = new javax.swing.JPanel();
         AUsers = new javax.swing.JLabel();
         header6 = new javax.swing.JPanel();
+        jLabel3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         addWindowListener(new java.awt.event.WindowAdapter() {
@@ -112,8 +113,6 @@ public class Admins extends javax.swing.JFrame {
         header14.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 130, 100));
 
         jPanel11.add(header14, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 150, 150));
-
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/hotel-logo-design_423075-16 (1).jpg"))); // NOI18N
         jPanel11.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(-50, 20, 330, 370));
 
         jPanel9.add(jPanel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 60, 150, 330));
@@ -137,33 +136,19 @@ public class Admins extends javax.swing.JFrame {
 
         header6.setBackground(new java.awt.Color(102, 102, 255));
         header6.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/gwapo (1).png"))); // NOI18N
+        header6.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 140, 110));
+
         jPanel9.add(header6, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 70, 140, 110));
 
         getContentPane().add(jPanel9);
         jPanel9.setBounds(0, 0, 670, 390);
 
-        setBounds(0, 0, 686, 429);
+        setSize(new java.awt.Dimension(686, 429));
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
-
-    private void jLabel28MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel28MouseClicked
-        // TODO add your handling code here:
-        this.dispose();
-    }//GEN-LAST:event_jLabel28MouseClicked
-
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
-        Login login = new Login();
-        login.setVisible(true);
-        this.dispose();
-    }//GEN-LAST:event_jButton1ActionPerformed
-
-    private void AUsersMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_AUsersMouseClicked
-
-        UsersForm lg = new UsersForm();
-        lg.setVisible(true);
-        this.dispose();
-
-    }//GEN-LAST:event_AUsersMouseClicked
 
     private void formWindowActivated(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowActivated
         // TODO add your handling code here:
@@ -183,6 +168,25 @@ public class Admins extends javax.swing.JFrame {
        
         }
     }//GEN-LAST:event_formWindowActivated
+
+    private void jLabel28MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel28MouseClicked
+        // TODO add your handling code here:
+        this.dispose();
+    }//GEN-LAST:event_jLabel28MouseClicked
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+        Login login = new Login();
+        login.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void AUsersMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_AUsersMouseClicked
+
+        UsersForm lg = new UsersForm();
+        lg.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_AUsersMouseClicked
 
     /**
      * @param args the command line arguments
@@ -238,6 +242,7 @@ public class Admins extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel28;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JPanel jPanel10;
     private javax.swing.JPanel jPanel11;
     private javax.swing.JPanel jPanel9;
